@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Dong.Dennis.4J.es.ContoCorrente/1.0.0": {
+        "runtime": {
+          "Dong.Dennis.4J.es.ContoCorrente.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dong.Dennis.4J.es.ContoCorrente/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

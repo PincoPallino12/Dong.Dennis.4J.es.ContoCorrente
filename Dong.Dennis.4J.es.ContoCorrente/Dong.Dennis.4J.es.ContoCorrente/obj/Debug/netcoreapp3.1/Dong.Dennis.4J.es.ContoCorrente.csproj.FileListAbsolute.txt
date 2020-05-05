@@ -1,0 +1,11 @@
+C:\Users\HP\source\repos\Dong.Dennis.4J.es.ContoCorrente\Dong.Dennis.4J.es.ContoCorrente\obj\Debug\netcoreapp3.1\Dong.Dennis.4J.es.ContoCorrente.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\Dong.Dennis.4J.es.ContoCorrente\Dong.Dennis.4J.es.ContoCorrente\obj\Debug\netcoreapp3.1\Dong.Dennis.4J.es.ContoCorrente.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\Dong.Dennis.4J.es.ContoCorrente\Dong.Dennis.4J.es.ContoCorrente\obj\Debug\netcoreapp3.1\Dong.Dennis.4J.es.ContoCorrente.AssemblyInfo.cs
+C:\Users\HP\source\repos\Dong.Dennis.4J.es.ContoCorrente\Dong.Dennis.4J.es.ContoCorrente\bin\Debug\netcoreapp3.1\Dong.Dennis.4J.es.ContoCorrente.exe
+C:\Users\HP\source\repos\Dong.Dennis.4J.es.ContoCorrente\Dong.Dennis.4J.es.ContoCorrente\bin\Debug\netcoreapp3.1\Dong.Dennis.4J.es.ContoCorrente.deps.json
+C:\Users\HP\source\repos\Dong.Dennis.4J.es.ContoCorrente\Dong.Dennis.4J.es.ContoCorrente\bin\Debug\netcoreapp3.1\Dong.Dennis.4J.es.ContoCorrente.runtimeconfig.json
+C:\Users\HP\source\repos\Dong.Dennis.4J.es.ContoCorrente\Dong.Dennis.4J.es.ContoCorrente\bin\Debug\netcoreapp3.1\Dong.Dennis.4J.es.ContoCorrente.runtimeconfig.dev.json
+C:\Users\HP\source\repos\Dong.Dennis.4J.es.ContoCorrente\Dong.Dennis.4J.es.ContoCorrente\bin\Debug\netcoreapp3.1\Dong.Dennis.4J.es.ContoCorrente.dll
+C:\Users\HP\source\repos\Dong.Dennis.4J.es.ContoCorrente\Dong.Dennis.4J.es.ContoCorrente\bin\Debug\netcoreapp3.1\Dong.Dennis.4J.es.ContoCorrente.pdb
+C:\Users\HP\source\repos\Dong.Dennis.4J.es.ContoCorrente\Dong.Dennis.4J.es.ContoCorrente\obj\Debug\netcoreapp3.1\Dong.Dennis.4J.es.ContoCorrente.dll
+C:\Users\HP\source\repos\Dong.Dennis.4J.es.ContoCorrente\Dong.Dennis.4J.es.ContoCorrente\obj\Debug\netcoreapp3.1\Dong.Dennis.4J.es.ContoCorrente.pdb
