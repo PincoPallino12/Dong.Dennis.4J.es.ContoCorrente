@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente.csproj": {}
+    "C:\\Users\\HP\\Desktop\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente.csproj": {
+    "C:\\Users\\HP\\Desktop\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente.csproj",
         "projectName": "Dong.Dennis.4J.es.ContoCorrente",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente\\Dong.Dennis.4J.es.ContoCorrente\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

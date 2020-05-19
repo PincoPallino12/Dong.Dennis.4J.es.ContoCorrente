@@ -8,18 +8,48 @@ namespace Dong.Dennis._4J.es.ContoCorrente
         {
             /*Inizializzazione e creazione della banca*/
 
+            string nome, indirizzo;
             Console.Write("\nInserisci il nome della banca: ");
-            string nomeBanca = Console.ReadLine();
+            nome = Convert.ToString(Console.ReadLine());
 
             Console.Write("\nInserisci l'indirizzo della banca: ");
-            string indirizzoBanca = Console.ReadLine();
+            indirizzo = Convert.ToString(Console.ReadLine());
 
             Console.WriteLine("\nBenvenuto cosa vuoi fare?:");
-            Banca banca = new Banca(nomeBanca, indirizzoBanca); // Banca
+            Banca banca = new Banca(nome, indirizzo); // Banca
 
             /*Inserimento dei dati dell'intestatario*/
 
-            int selezione = Opzioni();
+            int selezione = 0;
+
+            do
+            {
+                try
+                {
+                    Console.WriteLine("\n------------------------------");
+                    Console.WriteLine("1 - Modifica info banca");
+                    Console.WriteLine("2 - Inserisci nuovo intestatario");
+                    Console.WriteLine("3 - Stampa movimenti");
+                    Console.WriteLine("4 - Effettua bonifico");
+                    Console.WriteLine("5 - Effettua versamento");
+                    Console.WriteLine("6 - Effettua prelievo");
+                    Console.WriteLine("7 - Stampa clienti presenti");
+                    Console.WriteLine("8 - Stampa info banca");
+                    Console.WriteLine("9 - Stampa saldo conto");
+                    Console.WriteLine("\n99 - Esci");
+                    Console.WriteLine("\n------------------------------\n");
+                    Console.Write("Scelta : ");
+                    selezione = int.Parse(Console.ReadLine());
+                }
+                catch
+                {
+                    Console.WriteLine("Errore di inserimento riprova");
+                    selezione = 0;
+                }
+
+            } while (selezione != 1 && selezione != 2 && selezione != 3 && selezione != 4 && selezione != 5 && selezione != 6 && selezione != 7 && selezione != 8 && selezione != 9 && selezione != 10 && selezione != 11 && selezione != 99);
+
+
             while (selezione != 99)
             {
                 switch (selezione)
@@ -31,21 +61,18 @@ namespace Dong.Dennis._4J.es.ContoCorrente
                         InserisciIntestatario(banca);
                         break;
                     case 3:
-                        ModificaIntestatario(banca);
-                        break;
-                    case 4:
                         StampaMovimenti(banca);
                         break;
-                    case 5:
+                    case 4:
                         EseguiBonifico(banca);
                         break;
-                    case 6:
+                    case 5:
                         EseguiVersamento(banca);
                         break;
-                    case 7:
+                    case 6:
                         EseguiPrelievo(banca);
                         break;
-                    case 8:
+                    case 7:
                         //Stampa Tutti gli intestatari presenti
                         Console.WriteLine("\n------------------------------");
                         Console.WriteLine("\nElenco clienti della banca " + banca.Nome);
@@ -55,12 +82,12 @@ namespace Dong.Dennis._4J.es.ContoCorrente
                         }
                         Console.WriteLine("Ritorna all'home in corso........");
                         break;
-                    case 9:
+                    case 8:
                         //Stampa Il saldo di un conto se è presente
                         Console.WriteLine("Nome banca: " + banca.Nome + "\nIndirizzo banca: " + banca.Indirizzo);
                         Console.WriteLine("Ritorna all'home in corso........");
                         break;
-                    case 10:
+                    case 9:
                         Console.Write("Inserire IBAN del conto da verficare: ");
                         string ibanVerficare = Console.ReadLine();
                         bool ibanTrovato = false;
@@ -78,53 +105,16 @@ namespace Dong.Dennis._4J.es.ContoCorrente
                             Console.WriteLine("IBAN non trovato inserisci un iban adeguato");
                         }
                         Console.WriteLine("Ritorna all'home in corso........");
-                        break;
-                    case 11:
-                        AggiungiConto(banca);
-                        break;
+                        break;                
                 }
-                selezione = Opzioni();
+
             }
             Console.WriteLine("\nGrazie per aver scelto la banca " + banca.Nome);
             Console.WriteLine("Per terminare il programma premere un qualunque tasto...");
             Console.ReadKey();
         }
 
-        public static int Opzioni()
-        {
-            int selezione = 0;
-
-            do
-            {
-                try
-                {
-                    Console.WriteLine("\n------------------------------");
-                    Console.WriteLine("1 - Modifica info banca");
-                    Console.WriteLine("2 - Inserisci nuovo intestatario");
-                    Console.WriteLine("3 - Modififca intestatario presente");
-                    Console.WriteLine("4 - Stampa movimenti");
-                    Console.WriteLine("5 - Effettua bonifico");
-                    Console.WriteLine("6 - Effettua versamento");
-                    Console.WriteLine("7 - Effettua prelievo");
-                    Console.WriteLine("8 - Stampa clienti presenti");
-                    Console.WriteLine("9 - Stampa info banca");
-                    Console.WriteLine("10 - Stampa saldo conto");
-                    Console.WriteLine("11 - Aggiungi nuovo conto a intestatario");
-                    Console.WriteLine("\n99 - Esci");
-                    Console.WriteLine("\n------------------------------\n");
-                    Console.Write("Scelta : ");
-                    selezione = int.Parse(Console.ReadLine());
-                }
-                catch
-                {
-                    Console.WriteLine("Errore di inserimento riprova");
-                    selezione = 0;
-                }
-
-            } while (selezione != 1 && selezione != 2 && selezione != 3 && selezione != 4 && selezione != 5 && selezione != 6 && selezione != 7 && selezione != 8 && selezione != 9 && selezione != 10 && selezione != 11 && selezione != 99);
-
-            return selezione;
-        }
+    
 
         public static void ModificaBanca(Banca banca)
         {
@@ -579,72 +569,8 @@ namespace Dong.Dennis._4J.es.ContoCorrente
             Console.WriteLine("Ritorna all'home in corso........");
         }
 
-        public static void AggiungiConto(Banca banca)
-        {
-            bool trovato = false;
-            Random iban_casuale = new Random();
-
-            Console.WriteLine("\n------------------------------\n");
-            Console.Write("Inserire codice fiscale cliente: ");
-            Intestatario cliente = new Intestatario("", "", "", "", "", DateTime.Now);
-            string cf = Console.ReadLine();
-            //Prima di creare un'altro conto intestato ad una persona si controlla il Cf se nella lista Cf sia presente quello inserito da utente
-            foreach (Intestatario c in banca.clienti)
-            {
-                if (c.Cf == cf)
-                {
-                    trovato = true;
-                    cliente = c;
-                }
-            }
-
-            if (trovato == true)
-            {
-                string risposta = "";
-                do
-                {
-                    Console.WriteLine("\n------------------------------");
-                    Console.WriteLine("Vuoi aggiungere un conto online? (si/no)");
-                    Console.WriteLine("\nRisposta:");
-                    risposta = Console.ReadLine();
-                    if (risposta != "si" && risposta != "sì" && risposta != "no")
-                    {
-                        Console.WriteLine("\nErrore nell'inserimento dati");
-                    }
-                } while (risposta != "si" && risposta != "sì" && risposta != "no");
-
-                if (risposta == "no")
-                {
-                    Console.WriteLine("Creazione del conto...");
-                    ContoCorrente conto = new ContoCorrente(cliente, 100, "IT39" + iban_casuale.Next(10000, 1000000), banca);
-                    banca.AddConto(conto);
-                    cliente.AddConto(conto);
-
-                    Console.WriteLine("Conto corrente creato con numero massimo di movimenti pari a 100 e con iban: " + conto.Iban + "\n\n");
-                }
-                else
-                {
-                    Console.WriteLine("Creazione conto online...");
-                    ContoCorrente contoOnline = new ContoOnline(cliente, 100, "IT39" + iban_casuale.Next(10000, 1000000), banca, 2500);
-                    Console.WriteLine("Conto corrente creato con numero massimo di movimenti pari a 100, un prelievo massimo di 2500 e con iban: " + contoOnline.Iban + "\n\n");
-                }
-            }
-            else
-            {
-                string risposta = "";
-
-                Console.WriteLine("\n------------------------------");
-                Console.WriteLine("Cliente non trovato, vuoi inserirlo? (si/no)");
-                Console.WriteLine("\nRisposta:");
-                risposta = Console.ReadLine();
-
-                if (risposta == "si" || risposta == "sì")
-                {
-                    InserisciIntestatario(banca);
-                }
-            }
-            Console.WriteLine("Ritorna all'home in corso........");
-        }
+       
+        
     }
     
 }
